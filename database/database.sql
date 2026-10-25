@@ -26,7 +26,7 @@ CREATE TABLE Category(
 -- 3. Place / Attraction Table 
 DROP TABLE IF EXISTS Place;
 CREATE TABLE Place (
-    placeid INT PRIMARY KEY,
+    placeid INT AUTO-INCREMENT PRIMARY KEY,
     name VARCHAR(150) NOT NULL,
     description TEXT NOT NULL,
     categoryid INT NOT NULL,

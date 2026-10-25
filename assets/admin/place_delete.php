@@ -5,13 +5,12 @@
 require_once __DIR__ . '/auth_check.php';
 require_once __DIR__ . '/../../config/db.php';
 
-$id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
+
+$id = isset($_GET['placeid']) ? (int)$_GET['placeid'] : 0;
 if ($id <= 0) {
     header("Location: index.php");
     exit;
 }
-
-$pdo = getDB();
 
 try {
     // soft delete 
